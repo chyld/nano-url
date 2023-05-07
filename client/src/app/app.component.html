@@ -1,0 +1,9 @@
+<input type="text" #longurlinput />
+<button (click)="shorten(longurlinput.value)">go</button>
+<div>{{shorturl}}</div>
+
+
+
+<input type="text" #shorturlinput />
+<button (click)="lengthen(shorturlinput.value)">go</button>
+<a [href]="longurl" target="_blank">{{longurl}}</a>
