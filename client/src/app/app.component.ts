@@ -12,6 +12,10 @@ export class AppComponent {
 
   constructor(private http: HttpClient) {}
 
+  clear() {
+    window.location.reload();
+  }
+
   shorten(longurl: string) {
     this.http
       .post(`http://localhost:3000/api/shorten`, { longurl })

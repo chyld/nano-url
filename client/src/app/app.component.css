@@ -1,3 +1,29 @@
-button {
-    background-color: blueviolet;
+#clear {
+  margin-bottom: 15px;
+}
+
+#shrink {
+  background-color: aquamarine;
+  border: 1px solid green;
+  padding: 50px;
+  display: inline-block;
+  margin-right: 100px;
+  overflow: auto;
+  height: 100px;
+  width: 300px;
+}
+
+#grow {
+  background-color: coral;
+  padding: 50px;
+  border: 1px solid green;
+  display: inline-block;
+  overflow: auto;
+  height: 100px;
+  width: 300px;
+}
+
+a {
+  color: #252525;
+  text-decoration: none;
 }

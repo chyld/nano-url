@@ -1,9 +1,18 @@
-<input type="text" #longurlinput />
-<button (click)="shorten(longurlinput.value)">go</button>
-<div>{{shorturl}}</div>
+<h1>NanoURL</h1>
 
+<div id="clear">
+  <button (click)="clear()">clear</button>
+</div>
 
+<div id="shrink">
+  <input type="text" #longurlinput />
+  <button (click)="shorten(longurlinput.value)">shrink</button>
+  <div>{{ shorturl }}</div>
+</div>
 
-<input type="text" #shorturlinput />
-<button (click)="lengthen(shorturlinput.value)">go</button>
-<a [href]="longurl" target="_blank">{{longurl}}</a>
+<div id="grow">
+  <input type="text" #shorturlinput />
+  <button (click)="lengthen(shorturlinput.value)">grow</button>
+  <br />
+  <a [href]="longurl" target="_blank">{{ longurl }}</a>
+</div>
